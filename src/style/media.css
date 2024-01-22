@@ -23,3 +23,42 @@
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .header .header-bottom {
+    position: relative;
+    padding: 5px 0;
+    background-color: #fff;
+  }
+  .header .header-bottom__search-wrapper {
+    position: absolute;
+    padding: 8px 20px;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    box-shadow: -1px 18px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .header .header-bottom__search-wrapper.active {
+    bottom: -60px;
+  }
+  .header .header-bottom__search-wrapper::before {
+    display: none;
+  }
+  .header .header-bottom__search-close {
+    display: block;
+    position: absolute;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background: url("../images/x.svg") no-repeat center/cover;
+  }
+  .header .header-bottom__search-input {
+    max-width: 100%;
+    padding: 8px 30px 8px 8px;
+  }
+}
