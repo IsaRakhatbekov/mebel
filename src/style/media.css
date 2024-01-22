@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+  .header .header-top .nav {
+    display: none;
+  }
+  .header .header-bottom__menu-btn {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .header-bottom__mob-menu {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .header .header-bottom__contacts-wrapper {
+    align-items: center;
+  }
+  .header .header-bottom__search-btn {
+    display: block;
+  }
+  .header .header-bottom__number {
+    display: none;
+  }
+}
