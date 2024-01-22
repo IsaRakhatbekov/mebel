@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "fonts.css";
+
 *,
 *::after,
 *::before {
@@ -80,11 +81,13 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .header .header-top {
   padding: 8px 0;
   color: var(--color-light);
   background-color: var(--color-black);
 }
+
 .header .header-top__time {
   position: relative;
   display: inline-block;
@@ -92,6 +95,7 @@ body {
   font-size: 14px;
   line-height: 1.3em;
 }
+
 .header .header-top__time::before {
   content: "";
   position: absolute;
@@ -101,35 +105,43 @@ body {
   height: 20px;
   background: url("../images/time.svg") no-repeat center/cover;
 }
+
 .header .header-top__nav {
   gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header .header-top .nav {
   gap: 30px;
   display: flex;
   align-items: center;
 }
+
 .header .header-top .nav__items {
   transition: all 0.3s;
 }
+
 .header .header-top .nav__items:hover {
   transform: translateY(-2px);
 }
+
 .header .header-top .nav__items:hover .nav__links {
   color: var(--color-main);
 }
+
 .header .header-top .nav__links {
   font-size: 14px;
   line-height: 1.3em;
   transition: color 0.3s;
 }
+
 .header .header-top .nav__links:focus {
   outline: 1px solid var(--color-main);
   border-radius: 2px;
 }
+
 .header .header-top__signin {
   position: relative;
   color: var(--light-color);
@@ -138,6 +150,7 @@ body {
   line-height: 1.3em;
   cursor: pointer;
 }
+
 .header .header-top__signin::before {
   content: "";
   position: absolute;
@@ -147,42 +160,51 @@ body {
   height: 20px;
   background: url("../images/user.svg") no-repeat center/cover;
 }
+
 .header .header-top__signin:focus {
   outline: 1px solid var(--color-main);
   border-radius: 2px;
 }
+
 .header .header-bottom {
   padding: 15px 0;
 }
+
 .header .header-bottom__nav {
   gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header .header-bottom__wrapper {
   gap: 40px;
   display: flex;
   align-items: center;
 }
+
 .header .header-bottom__logo-wrapper {
   width: 100%;
   max-width: 108px;
   height: 50px;
   overflow: hidden;
 }
+
 .header .header-bottom__logo-wrapper:focus {
   outline: 2px solid var(--color-main);
 }
+
 .header .header-bottom__logo-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .header .header-bottom__search-wrapper {
   position: relative;
 }
+
 .header .header-bottom__search-wrapper::before {
   content: "";
   position: absolute;
@@ -192,54 +214,67 @@ body {
   height: 20px;
   background: url("../images/search.svg") no-repeat center/cover;
 }
+
 .header .header-bottom__search-btn {
   display: none;
   width: 20px;
   height: 20px;
   background: url("../images/search.svg") no-repeat center/cover;
 }
+
 .header .header-bottom__search-input {
   width: 100%;
   max-width: 298px;
   padding: 5px 10px 5px 28px;
   border-bottom: 1px solid #E8E8E8;
 }
+
 .header .header-bottom__search-input::-moz-placeholder {
   font-size: 16px;
   color: #ACACAC;
 }
+
 .header .header-bottom__search-input::placeholder {
   font-size: 16px;
   color: #ACACAC;
 }
+
 .header .header-bottom__search-input:focus {
   border-radius: 2px;
   outline: 2px solid var(--color-main);
 }
+
 .header .header-bottom__contacts-wrapper {
   gap: 20px;
   display: flex;
 }
+
 .header .header-bottom__links {
   width: 20px;
   height: 20px;
 }
+
 .header .header-bottom__links:focus {
   outline: 1px solid var(--color-main);
 }
+
 .header .header-bottom__links--telegram {
   background: url("../images/telegram.svg") no-repeat center/cover;
 }
+
 .header .header-bottom__links--whatsapp {
   background: url("../images/whatsapp.svg") no-repeat center/cover;
 }
+
 .header .header-bottom__number {
   position: relative;
   padding-bottom: 20px;
 }
+
 .header .header-bottom__number:focus {
   outline: 1px solid var(--color-main);
 }
+
 .header .header-bottom__number span {
   position: absolute;
   right: 0;
@@ -250,6 +285,7 @@ body {
   line-height: 1.3em;
   text-decoration: underline;
 }
+
 .header .header-bottom__menu-btn {
   width: 40px;
   height: 40px;
@@ -257,9 +293,11 @@ body {
   background-color: var(--color-black);
   cursor: pointer;
 }
+
 .header .header-bottom__menu-btn:focus {
   outline: 1px solid var(--color-main);
 }
+
 .header .header-bottom__menu-btn span {
   position: relative;
   display: inline-block;
@@ -267,7 +305,9 @@ body {
   height: 2px;
   background-color: var(--color-main);
 }
-.header .header-bottom__menu-btn span::after, .header .header-bottom__menu-btn span::before {
+
+.header .header-bottom__menu-btn span::after,
+.header .header-bottom__menu-btn span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -275,12 +315,15 @@ body {
   height: 2px;
   background-color: var(--color-main);
 }
+
 .header .header-bottom__menu-btn span::before {
   transform: translateY(-5px);
 }
+
 .header .header-bottom__menu-btn span::after {
   transform: translateY(5px);
 }
+
 .header .header-bottom .mobile-menu {
   position: absolute;
   width: 100%;
@@ -297,18 +340,22 @@ body {
   justify-content: center;
   transition: all 0.7s ease-in-out;
 }
+
 .header .header-bottom .mobile-menu.active {
   transform: translateY(0);
 }
+
 .header .header-bottom .mobile-menu.active .nav {
   gap: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .header .header-bottom .mobile-menu.active .nav__links:focus {
   outline: 1px solid var(--color-main);
 }
+
 .header .header-bottom .mobile-menu__btn {
   position: absolute;
   width: 40px;
@@ -320,9 +367,11 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+
 .header .header-bottom .mobile-menu__btn:focus {
   outline: 1px solid var(--color-main);
 }
+
 .header .header-bottom .mobile-menu__btn span {
   display: inline-block;
   position: relative;
@@ -330,7 +379,9 @@ body {
   height: 0;
   background-color: var(--color-main);
 }
-.header .header-bottom .mobile-menu__btn span::after, .header .header-bottom .mobile-menu__btn span::before {
+
+.header .header-bottom .mobile-menu__btn span::after,
+.header .header-bottom .mobile-menu__btn span::before {
   content: "";
   position: absolute;
   left: 0;
@@ -338,9 +389,14 @@ body {
   height: 2px;
   background-color: var(--color-main);
 }
+
 .header .header-bottom .mobile-menu__btn span::before {
   transform: rotate(-45deg);
 }
+
 .header .header-bottom .mobile-menu__btn span::after {
   transform: rotate(45deg);
 }
+
+
+.test {}
