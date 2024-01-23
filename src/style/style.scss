@@ -71,7 +71,18 @@ body {
   background-color: var(--light-color);
 }
 
-.def-title {}
+.def-title {
+  font-size: calc(25px + 29 * (100vw / 1440));
+  line-height: 1em;
+  font-size: 900;
+}
+
+.def-btn {
+  background: var(--dark_blue, #63BFBE);
+  box-shadow: 0px 6px 14px 0px rgba(88, 76, 42, 0.20);
+  font-weight: 700;
+  padding: 15px 30px;
+}
 
 .container {
   max-width: 1250px;
@@ -80,6 +91,8 @@ body {
 }
 
 .header {
+  position: relative;
+  z-index: 90;
 
   &__container {
     max-width: 1400px;
@@ -407,9 +420,21 @@ body {
 }
 
 .hero {
+  position: relative;
   color: var(--color-light);
+  // padding: 195px 0 48px;
   height: calc(100vh - 120px);
   background: url("../images/hero-bg.png") no-repeat center/cover;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 46, 46, .6);
+    z-index: 0;
+  }
 
   &__container {
     height: 100%;
@@ -417,6 +442,7 @@ body {
 
   &__inner {
     width: 100%;
+    max-width: 710px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -424,8 +450,43 @@ body {
   }
 
   &__title {
-    // font-size: calc(50px + 160 * (100vw / 1900));
+    font-size: calc(32px + 22 * (100vw / 1440));
     line-height: 1em;
+    font-weight: 900;
+    margin-bottom: 15px;
+    z-index: 1;
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  &__link {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    transition: all .3s;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 22px;
+      top: 17px;
+      width: 20px;
+      height: 20px;
+      background: url("../images/arrow.svg") no-repeat center/cover;
+      transition: all .3s;
+    }
+
+    &:hover {
+      box-shadow: 0 0 35px 0px #2f2e2e;
+
+      &::after {
+        transform: translateX(7px);
+      }
+    }
   }
 }
 
@@ -438,6 +499,7 @@ body {
   &__wrapper {}
 
   &__list {
+    position: relative;
     margin-bottom: 100px;
     gap: 30px;
     display: grid;
@@ -456,18 +518,42 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    opacity: 0;
-    transform: translateX(200px);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out, box-shadow .5s;
 
-    &.active {
-      opacity: 1;
-      transform: translateX(0px);
+    &:nth-child(1) {
+      transform: translateX(100px);
+      transition: transform 1s;
+
+      &.active {
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
 
-    &:hover {
-      box-shadow: 0 10px 25px 5px #fff;
-      // box-shadow: 0 0 0 0 #fff;
+    &:nth-child(2) {
+      transform: translateX(150px);
+      transition: transform 1.5s;
+
+      &.active {
+        transform: translateX(0px);
+      }
+    }
+
+    &:nth-child(3) {
+      transform: translateX(200px);
+      transition: transform 2s;
+
+      &.active {
+        transform: translateX(0px);
+      }
+    }
+
+    &:nth-child(4) {
+      transform: translateX(250px);
+      transition: transform 2.4s;
+
+      &.active {
+        transform: translateX(0px);
+      }
     }
   }
 
@@ -515,7 +601,7 @@ body {
 
   &__content {
     width: 100%;
-    max-width: 490px;
+    max-width: 475px;
   }
 
   &__title {
@@ -531,8 +617,9 @@ body {
   }
 
   &__text {
+    position: relative;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(180px);
     transition: opacity 1.2s ease-in, transform 1.2s ease-in-out;
 
     &.active {
@@ -544,7 +631,7 @@ body {
   .categories-tape {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -50px;
     padding: 50px 100px;
     background-color: var(--color-main);
     width: 100%;
@@ -554,13 +641,14 @@ body {
     z-index: -1;
 
     &__list {
-      gap: 60px;
-      display: flex;
-      align-items: center;
+      gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
     }
 
     &__items {
-      width: 70px;
+      width: 100%;
+      margin: 0 auto;
       text-align: center;
     }
 
@@ -575,6 +663,10 @@ body {
         height: 100%;
         object-fit: contain;
       }
+    }
+
+    &__naming {
+      color: var(--color-light);
     }
   }
 }
