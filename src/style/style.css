@@ -574,3 +574,64 @@ body {
 .popular {
   padding: 100px 0;
 }
+.popular__title-wrapper {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.popular__link {
+  position: relative;
+  margin-top: 12px;
+  padding: 5px 25px 5px 5px;
+}
+.popular__link::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/arrow-dark.svg") no-repeat center/cover;
+  transition: all 0.3s;
+}
+.popular__link:hover::after {
+  transform: translateX(-5px);
+}
+.popular .card {
+  width: 100%;
+  max-width: 282px;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.popular .card__img-wrapper {
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+}
+.popular .card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .card__text-wrapper {
+  padding: 10px 15px;
+}
+.popular .card__naming {
+  display: inline-block;
+  color: #ACACAC;
+  margin-bottom: 10px;
+}
+.popular .card__naming span {
+  color: var(--color-black);
+  font-weight: 500;
+}
+.popular .card__price {
+  display: block;
+  font-weight: 500;
+}
+.popular .card__btn {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid #E3E3E3;
+}
