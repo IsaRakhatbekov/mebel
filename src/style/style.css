@@ -574,6 +574,9 @@ body {
 .popular {
   padding: 100px 0;
 }
+.popular__wrapper {
+  position: relative;
+}
 .popular__title-wrapper {
   gap: 30px;
   display: flex;
@@ -602,10 +605,17 @@ body {
   width: 100%;
   max-width: 282px;
   box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s;
+}
+.popular .card:hover {
+  box-shadow: 0 0 25px 1px #2f2e2e;
+}
+.popular .card:hover .card__img {
+  transform: scale(1.1);
 }
 .popular .card__img-wrapper {
   width: 100%;
-  max-height: 300px;
+  height: 300px;
   overflow: hidden;
 }
 .popular .card__img {
@@ -613,6 +623,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.5s;
 }
 .popular .card__text-wrapper {
   padding: 10px 15px;
@@ -634,4 +645,24 @@ body {
   width: 100%;
   padding: 12px 0;
   border-top: 1px solid #E3E3E3;
+  transition: all 0.5s;
+}
+.popular .card__btn:hover {
+  color: var(--color-light);
+  background-color: var(--color-black);
+}
+.popular .swiper {
+  padding: 40px;
+}
+.popular .swiper-button-prev,
+.popular .swiper-button-next {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.our-work__list {
+  gap: 30px;
+  display: grid;
 }

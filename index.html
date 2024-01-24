@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KUMPA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./src/style/style.css">
   <link rel="stylesheet" href="./src/style/media.css">
 </head>
@@ -241,30 +242,153 @@
               Перейти в каталог
             </a>
           </div>
-
-          <div class="popular__card card">
-            <div class="card__img-wrapper"><img class="card__img" src="./src/images/popular-card-1.png" alt=""></div>
-            <div class="card__text-wrapper">
-              <span class="card__naming">
-                Стеллаж
-                <span>
-                  “Rack”
-                </span>
-              </span>
-              <span class="card__price">
-                от 20 000 ₽
-              </span>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper">
+                    <img class="card__img" src="./src/images/popular-card-1.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper">
+                    <img class="card__img" src="./src/images/popular-card-2.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper"><img class="card__img" src="./src/images/popular-card-3.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper"><img class="card__img" src="./src/images/popular-card-4.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper"><img class="card__img" src="./src/images/popular-card-4.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__card card">
+                  <div class="card__img-wrapper"><img class="card__img" src="./src/images/popular-card-4.png" alt="">
+                  </div>
+                  <div class="card__text-wrapper">
+                    <span class="card__naming">
+                      Стеллаж
+                      <span>
+                        “Rack”
+                      </span>
+                    </span>
+                    <span class="card__price">
+                      от 20 000 ₽
+                    </span>
+                  </div>
+                  <button class="card__btn">Заказать</button>
+                </div>
+              </div>
             </div>
-            <button class="card__btn">Заказать</button>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-
         </div>
+      </div>
+    </section>
+
+    <section class="our-work">
+      <div class="our-work__container container">
+        <ul class="our-work__list">
+          <li class="our-work__items our-work__title-wrapper  ">
+            <h2 class="our-work__title def-title">
+              Наши работы
+            </h2>
+            <a class="our-work__link" href="#">
+              Смотреть все
+            </a>
+          </li>
+          <li class="our-work__items"><img class="our-work__img" src="./src/images/our-work-2.png" alt=""></li>
+          <li class="our-work__items"><img class="our-work__img" src="./src/images/our-work-3.png" alt=""></li>
+          <li class="our-work__items"><img class="our-work__img" src="./src/images/our-work-1.png" alt=""></li>
+          <li class="our-work__items"><img class="our-work__img" src="./src/images/our-work-4.png" alt=""></li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer"></footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./src/js/script.js"></script>
 </body>
 

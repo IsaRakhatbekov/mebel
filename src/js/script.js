@@ -54,3 +54,22 @@ if (animItems.length > 0) {
 		animOnScroll();
 	}, 300)
 }
+
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
