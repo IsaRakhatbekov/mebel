@@ -12,7 +12,7 @@
 
 <body id="body">
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__top header-top">
       <div class="header__container">
         <nav class="header-top__nav">
@@ -365,35 +365,66 @@
         </div>
       </div>
     </section>
-
-    <section class="our-work">
-      <div class="our-work__container container">
-        <ul class="our-work__list">
-          <li class="our-work__items our-work__title-wrapper  ">
-            <h2 class="our-work__title def-title">
-              Наши работы
-            </h2>
-            <a class="our-work__link" href="#">
-              Смотреть все
-            </a>
-          </li>
-          <li class="our-work__items our-work__items--first">
-            <img class="our-work__img" src="./src/images/our-work-2.png" alt="">
-          </li>
-          <li class="our-work__items our-work__items--second">
-            <img class="our-work__img" src="./src/images/our-work-3.png" alt="">
-          </li>
-          <li class="our-work__items our-work__items--third">
-            <img class="our-work__img" src="./src/images/our-work-1.png" alt="">
-          </li>
-          <li class="our-work__items our-work__items--fourth">
-            <img class="our-work__img" src="./src/images/our-work-4.png" alt="">
-          </li>
-        </ul>
-      </div>
-    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__container container">
+      <ul class="footer__wrapepr">
+        <li class="footer__columns">
+          <a class="footer__logo-wrapper" href="#header"><img class="footer__logo" src="./src/images/logo.svg"
+              alt="Логотип"></a>
+        </li>
+        <li class="footer__columns">
+          <h3 class="footer__title">KUMPA.RU</h3>
+          <a class="footer__links" href="#">О компании</a>
+          <a class="footer__links" href="#">Дилерам и дизайнерам</a>
+          <a class="footer__links" href="#">Где купить</a>
+          <a class="footer__links" href="#">Личный кабинет</a>
+        </li>
+        <li class="footer__columns">
+          <h3 class="footer__title">ПОКУПАТЕЛЮ</h3>
+          <a class="footer__links" href="#">Портфолио</a>
+          <a class="footer__links" href="#">Отзывы</a>
+          <a class="footer__links" href="#">Доставка</a>
+          <a class="footer__links" href="#">Как купить</a>
+          <a class="footer__links" href="#">Блог</a>
+          <a class="footer__links" href="#">Материалы</a>
+        </li>
+        <li class="footer__columns">
+          <h3 class="footer__title">КАТАЛОГ</h3>
+          <a class="footer__links" href="#">О Перегородки</a>
+          <a class="footer__links" href="#">Стеллажи</a>
+          <a class="footer__links" href="#">Столы</a>
+          <a class="footer__links" href="#">Пеналы</a>
+        </li>
+        <li class="footer__columns">
+          <h3 class="footer__title">СВЯЗЬ С НАМИ</h3>
+          <a class="footer__contacts" href="tel:+78008008080">
+            +7 (800) 800-80-80
+            <span>Заказать звонок</span>
+          </a>
+          <a class="footer__contacts" href="#">
+            info@kumpa.ru
+          </a>
+          <span class="footer__contacts">
+            Ежедневно с 10:00 до 21:00
+          </span>
+          <a class="footer__contacts" href="#">
+            г. Ульяновск, Радищева 81
+          </a>
+          <div class="footer__social">
+            <a class="footer__social-links" href="#"><img class="footer__social-img" src="./src/images/telegram.svg"
+                alt="Телеграм"></a>
+            <a class="footer__social-links" href="#"><img class="footer__social-img" src="./src/images/whatsapp.svg"
+                alt="Whatsapp"></a>
+            <a class="footer__social-links" href="#"><img class="footer__social-img" src="./src/images/facebook.svg"
+                alt="Facebook"></a>
+            <a class="footer__social-links" href="#"><img class="footer__social-img" src="./src/images/vk.svg"
+                alt="ВКонтакте"></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./src/js/script.js"></script>
 </body>

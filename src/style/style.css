@@ -66,7 +66,7 @@ body {
   font-weight: 400;
   line-height: 1.3em;
   color: var(--color-black);
-  background-color: var(--light-color);
+  background-color: hsl(0, 0%, 91%);
 }
 
 .def-title {
@@ -673,4 +673,18 @@ body {
 }
 .our-work__items--fourth {
   grid-template: 3/4;
+}
+.footer {
+  background-color: var(--color-light);
+  padding: 80px 0;
+}
+.footer__wrapepr {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+}
+.footer__columns {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
