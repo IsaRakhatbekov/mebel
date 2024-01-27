@@ -665,4 +665,12 @@ body {
 .our-work__list {
   gap: 30px;
   display: grid;
+  grid-template-columns: 350px auto 256px;
+}
+.our-work__items {
+  width: 100%;
+  height: 100%;
+}
+.our-work__items--fourth {
+  grid-template: 3/4;
 }
